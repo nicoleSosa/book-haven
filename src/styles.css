@@ -1,0 +1,311 @@
+
+*{
+    box-sizing: border-box;
+  }
+  
+  /* changes the background color of all the pages */
+  body{
+    margin:0;
+    background-color: #EBE9E9;
+  }
+  
+  .container{
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  /* Styling for the navigation bar  */
+  
+  .nav-container{
+  margin: 1rem;
+  text-align: center;
+  }
+  
+  .logo-brandName{
+  margin-right: 40%;
+  display: flex;
+  }
+  .nav-style {
+    background-color: black;
+    color: #EBE9E9;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .nav-style ul{
+  
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  
+  
+  }
+  .nav-style a{
+  
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+   
+  }
+  
+  .nav-style li:hover{
+    color: white;
+  
+  }
+  
+  .icon{
+  margin-right: 2%;
+  width: 8%;
+  }
+  
+  .nav-title{
+  font-size: 2rem;
+  }
+  
+  .nav-title:hover{
+  color: whitesmoke;
+  }
+  
+  /* End of styling for navigation bar  */
+  
+  /* Styling for search bar */
+  .search-container{
+  display: flex;
+  gap: 0.55rem;
+  }
+  
+  .search-btn-style{
+  width: 7.5%;
+  background-color: #EBE9E9 ; 
+  border-radius:15px ;
+  }
+  
+  .search-icon{
+  width: 80%;
+  }
+  
+  /* end of styling for search bar */
+  
+  /* styling for the search results in the browse page */
+  
+  .browse-container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .browse-title{
+  font-size: 2.5rem;
+  }
+  
+  .browse-content{
+  padding: 30px 0;
+  max-width: 600px;
+  margin: 0 auto;
+  }
+  
+  .browse-content .input-styling input{
+    width: 100%;
+    color: black;
+    background-color:lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1.20rem;
+  }
+  
+  
+  ::placeholder { 
+  color: gray;
+  opacity: 1;
+  }
+  
+  /* .btn-style{
+    margin-top: 10px;
+  } */
+  .search-results-style {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+  }
+  
+  .search-results-style li {
+    list-style: none;
+  }
+  
+  
+  .book-card-style {
+    display: flex;
+    margin-bottom: 35px;
+  }
+  
+  .book-card-style .book-cover img {
+    width: 78px;
+    height: 115px;
+    background-color: #dbdada;
+    border-radius: 5px;
+    margin-right: 16px;
+    display: block;
+    color: transparent;
+  }
+  
+  
+  .book-card-style .book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1%;
+  }
+  
+  .book-card-style .book-info .book-result-title {
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 4%;
+  }
+  
+  .book-card-style .book-info .book-author {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: left;
+    color: black;
+    margin: 0;
+  }
+  .book-card-style .add-btn-container button {
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+  .add-btn {
+    padding: 10px 8px;
+    background-color: #C6DDF0;
+    color:  black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    border: none;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    line-height: 1.1;
+  }
+  
+  
+  .add-btn:hover {
+   
+    background-color:  #C8ADC0;
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .add-btn:disabled {
+    pointer-events: none;
+    background-color: #C8ADC0;
+    opacity: 0.5;
+  }
+  h3{
+    color: black;
+  } 
+  
+  /* reading list page styling  */
+  .book-list-title-container{
+    text-align: left;
+    display: flex;
+  
+  }
+  .book-list-title{
+    font-size: 2.5rem;
+    margin-top: 0;
+    
+    
+  }
+  .heart-icon {
+    height: 45px;
+    width: 50px;
+    margin-left: 1.5%;
+  }
+  
+  .book-list-page {
+    padding: 15px 0;
+  }
+  
+  .book-list-container{
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .book-list-card {
+    display: flex;
+    margin-top: 5px ;
+    margin-bottom: 35px;
+  }
+  
+  .book-list-card .book-list-cover img{
+    width: 115px;
+    height: 160px;
+    background-color: #dbdada;
+    border-radius: 5px;
+    display: block;
+    color: transparent;
+  }
+  
+  .book-layout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .book-list-remove-button{
+    margin-top: 10px;
+    background-color: #C6DDF0;
+    border-style: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 700;
+  }
+  .book-list-remove-button:hover{
+    background-color: #C8ADC0;
+  
+  }
+  
+  
+  
+  @media (min-width: 992px) {
+    .book-layout {
+      grid-template-columns: repeat(5, 1fr);
+    }
+   
+  }
+  
+  @media (max-width: 640px){
+    .logo-brandName{
+      margin-right: 10%;
+      display: flex;
+    
+    
+    }
+  
+    .icon{
+      margin-right: 2%;
+      width: 16%;
+      height: 70%;
+      margin-top: 1.5%;
+    }
+  
+  }
+  
+  
